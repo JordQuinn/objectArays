@@ -103,6 +103,10 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+    for(i=0; i<numberVals.length; i++){
+        vals.push(letterVals[i] + numberVals[i])
+    }
+    return vals
 }
 
 
@@ -126,6 +130,7 @@ function union(){
         if (first[i] == second[i]){
             same.push (first[i])
         }
+    }
     return same  
 }
 
